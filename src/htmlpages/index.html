@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div>
+        <div style=" display: flex; justify-content: center; align-items: center;text-align: center;margin-bottom: 10px;">
+            <img src="http://localhost:8080/" alt="image" style="height: 150px;width: 400px; margin-left: 10px;" />
+        </div>
+        <div style="text-align: end; font-weight: bold; font-size: 25px;margin-bottom: 15px;"> Certificate Fee$19.12</div>
+
+      <table class="table" style="margin-bottom: 50px">
+        <thead>
+          <tr
+            style="
+              background-color: #013166 !important ;
+              color: #fff !important;
+              font-size: 25px !important;
+            "
+          >
+            <th>Property Information</th>
+            <th>Request Information</th>
+            <th>Update information</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>File# {{data.property_information.file}}</td>
+            <td>Requested date {{data.request_information.requested_date}}</td>
+            <td>Updated Request</td>
+          </tr>
+          <tr>
+            <td>owner : {{data.property_information.owner}}</td>
+            <td>Requested By {{data.request_information.requested_date}}</td>
+            <td>Requested By</td>
+          </tr>
+          <tr>
+            <td>adress 1 :{{data.property_information.address1}}</td>
+            
+            <td>Date Completed {{data.request_information.date_completed}}</td>
+            <td>Update completed</td>
+          </tr>
+          <tr>
+            <td>adress 2 :{{data.property_information.address2}}</td>
+            <td>
+              # of JurisDiction(s) {{data.request_information.jurisdiction}}
+            </td>
+          </tr>
+          <tr>
+            <td>City State Zip :{{data.property_information.city_state_zip}}</td>
+            <td># of Parcels :1</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table" style="margin-bottom: 50px">
+        <thead>
+          <tr style="background-color: #013166; color: #fff">
+            <th colspan="12" style="text-align: center; font-size: 25px">
+              Tax Summary
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Status COUNTY-AZ</td>
+            <td>Parcel</td>
+            <td>Tax Year</td>
+            <td>Int</td>
+            <td>Tax Amount</td>
+            <td>Penalty</td>
+            <td>Total Due</td>
+            <td>Good Thru</td>
+            <td>Due date</td>
+          </tr>
+          <tr>
+            <td>Pid</td>
+            <td>111111</td>
+            <td>2020</td>
+            <td>1</td>
+            <td>$00.00</td>
+            <td>$0.0</td>
+            <td></td>
+            <td>11/01/2020/td></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table" style="margin-bottom: 50px">
+        <thead>
+          <tr style="background-color: #013166; color: #fff">
+            <th colspan="12" style="text-align: center; font-size: 25px">
+              Notes
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tax Notes</td>
+            <td>
+              2020-2023 Real Estate taxes are paid as reported there are no
+              prior year delinquent taxes property recied state credit
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table" style="margin-bottom: 100px">
+        <thead>
+          <tr style="background-color: #013166; color: #fff">
+            <th colspan="12" style="text-align: center; font-size: 25px">
+              Legal Description
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Parcel</td>
+            <td>Legal Description</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table" style="margin-bottom: 100px">
+        <thead>
+          <tr style="background-color: #013166; color: #fff">
+            <th colspan="12" style="text-align: center; font-size: 25px">
+              Property Value Summary
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Parcel#</td>
+            <td>Year</td>
+            <td>AssesedLand</td>
+            <td>Assesed Improvement</td>
+            <td>Total Assesment</td>
+            <td>Exempt Type</td>
+            <td>Exempt Amount</td>
+          </tr>
+          <tr>
+            <td>111111</td>
+            <td>2022</td>
+            <td>$0.00</td>
+            <td>$0.00</td>
+            <td>None</td>
+            <td>None</td>
+            <td>$0.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.table-primary > th {
+    background-color: #1a3ab0 !important;
+    color :#fff !important;
+    margin-bottom: 10px !important
+}
+
+.table-header > th{
+    font-weight: bold; 
+    font-size: 25px;
+
+   
+}
+.jidjed{
+    display: flex;
+}
